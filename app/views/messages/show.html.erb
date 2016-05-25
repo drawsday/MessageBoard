@@ -1,0 +1,7 @@
+<h2><%= @message.title %></h2>
+<p><%= @message.description %></p>
+<p><%= @message.created_at %></p>
+
+<%= link_to "Show All Messages", root_path %>
+<%= link_to "Edit", edit_message_path(@message) %>
+<%= link_to "Delete This Message", message_path(@message), method: :delete, data: { confirm: "Are you sure?" } %>
